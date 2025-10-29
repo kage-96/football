@@ -1,0 +1,21 @@
+export interface ScorersType {
+  competition:{
+    emblem:string,
+    name:string
+  }
+  scorers:Array<{
+    assists:number,
+    goals:number,
+    playedMatches:number,
+    player:{
+      id:number
+      name:string,
+      section:string,
+      nationality:string
+    },
+    team:{
+      name:string
+      crest:string
+    }
+  }>
+}

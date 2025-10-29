@@ -1,0 +1,28 @@
+export interface MatchType {
+  competition:{
+    emblem:string
+    name:string
+  }
+  matches:Array<{
+    awayTeam:{
+      crest:string
+      id:number
+      shortName:string
+    }
+    homeTeam:{
+      crest:string
+      id:number
+      shortName:string
+    }
+    score:{
+      fullTime:{
+        away:number
+        home:number
+      }
+      winner:string
+    }
+    status:string
+    utcDate:string
+    id:number
+  }>
+}
