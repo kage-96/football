@@ -1,7 +1,7 @@
 'use client'
 import { useRouteGuard } from "./_hooks/useRouteGuard";
 
-export default async function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout() {
 
   useRouteGuard();
   return (

@@ -1,9 +1,9 @@
 import { PrismaClient } from "@prisma/client";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 const prisma = new PrismaClient();
 
-export const GET = async (request:NextRequest) => {
+export const GET = async () => {
   try{
     const users = await prisma.user.findMany({
       orderBy:{createdAt:"desc"},

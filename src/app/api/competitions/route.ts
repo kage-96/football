@@ -1,12 +1,12 @@
 import { CompetitionsResponseType } from "@/app/types/CompetitionsType";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 const leagueList = ['Premier League','Ligue 1','Bundesliga','Serie A','Primera Division']
 interface Data {
   name:string
 }
 
-export const GET = async (request:NextRequest) => {
+export const GET = async () => {
 
   try{
 

@@ -48,7 +48,7 @@ export const POST = async (request:NextRequest) => {
 
 }
 
-export const GET = async (request:NextRequest) => {
+export const GET = async () => {
 
   try{
     const supabase = createRouteHandlerClient({cookies})

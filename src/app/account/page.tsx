@@ -24,7 +24,7 @@ export default function Account(){
   const {session} = useSupabaseSession();
   const userId = session?.user.id
   
-  const {data,isLoading,error} = useFetcher<FavoriteTeamItem>({
+  const {data,isLoading} = useFetcher<FavoriteTeamItem>({
     url:userId ? `/api/users/${userId}/`:'',
     method:"GET"
   })
