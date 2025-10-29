@@ -11,7 +11,7 @@ export const Header:FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { session } = useSupabaseSession();
   const pathname = usePathname()
-  const {data,isLoading,error} = useFetcher<CompetitionType[]>(
+  const {data,isLoading} = useFetcher<CompetitionType[]>(
     {
       url : '/api/competitions',
       method:"GET"

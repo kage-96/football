@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 interface Props {
   url:string
@@ -36,6 +36,6 @@ export const useFetcher = <T,>({url,method}:Props) => {
     }
     fetcher()
     
-  }, [url])
+  }, [url,method])
   return {data,isLoading,error}
 }

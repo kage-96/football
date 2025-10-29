@@ -34,7 +34,7 @@ export const POST = async (request:NextRequest) => {
       create:{
         id,
         shortName,
-        crestUrl,
+        crestUrl:crestUrl ?? "",
       }
     })
     return NextResponse.json(

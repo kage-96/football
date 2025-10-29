@@ -1,7 +1,7 @@
 import { MatchType } from "@/app/types/MatchType";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export const GET = async (request:NextRequest,{params}:{params:{id:string}}) => {
+export const GET = async (_request:Request,{params}:{params:{id:string}}) => {
   const {id} = params;
   try{
     const res = await fetch(`https://api.football-data.org/v4/competitions/${id}/matches?status=SCHEDULED`,{
