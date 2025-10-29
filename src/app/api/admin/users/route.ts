@@ -25,9 +25,8 @@ export const GET = async () => {
     return NextResponse.json({status:"OK",users},{status:200})
 
   }catch(err){
-    console.error("Prisma error:",err)
-    console.log(err);
-    return NextResponse.json({status:"error",message:"Failed to fetch users"},{status:500})
-
+    if(err instanceof Error){
+      return NextResponse.json({detail:err.message},{status:500})
+    }
   }
 }
