@@ -9,6 +9,8 @@ export const GET = async () => {
       orderBy:{createdAt:"desc"},
       select:{
         id:true,
+        email:true,
+        createdAt:true,
         favorites:{
           select:{
             team:{

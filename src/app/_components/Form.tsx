@@ -45,7 +45,7 @@ export const Form:FC<Props> = ({onSubmit,isLogin,buttonTxt,email,setEmail,passwo
       {isLogin
       ?(
         <div className="text-center mt-6">
-          <p className="underline">パスワードを忘れた方はこちら</p>
+          {/* <p className="underline">パスワードを忘れた方はこちら</p> */}
           <Link href='/signup' className="mt-6 block pt-6 border-t w-full">アカウント作成</Link>
         </div>
       )
