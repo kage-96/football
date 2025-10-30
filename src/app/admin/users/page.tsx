@@ -20,8 +20,8 @@ export default function Users(){
     {data.users.map((user) => {
       return(
         <div className="flex" key={user.id}>
-          <p className="mr-2">{user.email}</p>
-          <p className="mr-2">{new Date(user.createdAt).toLocaleDateString('ja-JP')}</p>
+          {/* <p className="mr-2">{user.email}</p> */}
+          {/* <p className="mr-2">{new Date(user.createdAt).toLocaleDateString('ja-JP')}</p> */}
           {/* <p>{user.favorites[0]?.team.shortName}</p> */}
         </div>
       )
